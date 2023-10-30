@@ -38,6 +38,7 @@ train.py
 --logging_steps 1 
 --fsdp "full_shard auto_wrap" 
 --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer'
+--include_tokens_per_second
 ```
 
 The above is an example. We would need to tune parameters depending on the model size, data size. The above example has been validated on 8 x A100 80GB.
