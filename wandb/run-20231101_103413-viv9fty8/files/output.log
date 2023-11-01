@@ -1,0 +1,32 @@
+  0%|                                                                                                                                                                                                                        | 0/3825 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/u/rganti/.conda/envs/tuning/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  0%|                                                                                                                                                                                                             | 1/3825 [01:10<75:20:20, 70.93s/it]
+
+  0%|                                                                                                                                                                                                             | 2/3825 [02:21<75:08:27, 70.76s/it]
+
+  0%|▏                                                                                                                                                                                                            | 3/3825 [03:31<74:40:06, 70.33s/it]
+
+  0%|▏                                                                                                                                                                                                            | 4/3825 [04:41<74:37:41, 70.31s/it]
+
+  0%|▎                                                                                                                                                                                                            | 5/3825 [05:52<74:42:01, 70.40s/it]
+
+  0%|▎                                                                                                                                                                                                            | 6/3825 [07:03<74:48:15, 70.51s/it]
+
+  0%|▍                                                                                                                                                                                                            | 7/3825 [08:12<74:25:50, 70.18s/it]
+{'loss': 0.9061, 'learning_rate': 1.2173913043478262e-06, 'epoch': 0.01}
+
+
+  0%|▍                                                                                                                                                                                                            | 9/3825 [10:32<74:19:25, 70.12s/it]
+{'loss': 0.8295, 'learning_rate': 1.565217391304348e-06, 'epoch': 0.01}
+
+
+  0%|▌                                                                                                                                                                                                           | 11/3825 [12:51<74:02:39, 69.89s/it]
+
+  0%|▋                                                                                                                                                                                                           | 12/3825 [14:03<74:44:45, 70.57s/it]
+
+  0%|▋                                                                                                                                                                                                           | 13/3825 [15:14<74:48:54, 70.65s/it]
+
+  0%|▋                                                                                                                                                                                                           | 14/3825 [16:24<74:43:22, 70.59s/it]
+
+  0%|▊                                                                                                                                                                                                           | 15/3825 [17:35<74:37:11, 70.51s/it]

@@ -12,6 +12,15 @@ def format_prompt_fn(example):
     
     return text
 
+def format_prompt_fn_no_pack(example):
+    output = []
+    for i in range(len(example['input'])):
+        text = f"{example['input'][i]} \n[ANS] {example['output'][i]}"
+        output.append(text)
+
+    return output
+    
+
 def train():
     parser = transformers.HfArgumentParser((configs.ModelArguments, configs.DataArguments, configs.TrainingArguments))
     model_args, data_args, training_args = parser.parse_args_into_dataclasses()
@@ -51,21 +60,30 @@ def train():
     
     # load the data by parsing JSON
     json_dataset = datasets.load_dataset('json', data_files=data_args.data_path)
-    print(len(json_dataset))
+    print(len(json_dataset['train']))
     
     #response_template="\n[ANS]"
     #data_collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer)
-    
-    trainer = SFTTrainer(
-        model=model,
-        tokenizer=tokenizer,
-        train_dataset=json_dataset['train'],
-        formatting_func=format_prompt_fn,
-        #data_collator=data_collator,
-        packing=True,
-        args=training_args,
-        max_seq_length=4096
-    )
+
+    if training_args.packing:
+        trainer = SFTTrainer(
+            model=model,
+            tokenizer=tokenizer,
+            train_dataset=json_dataset['train'],
+            formatting_func=format_prompt_fn,
+            packing=True,
+            args=training_args,
+            max_seq_length=4096
+        )
+    else:
+        trainer = SFTTrainer(
+            model=model,
+            tokenizer=tokenizer,
+            train_dataset=json_dataset['train'],
+            formatting_func=format_prompt_fn_no_pack,
+            args=training_args,
+            max_seq_length=4096
+        )
     
     trainer.train()
     

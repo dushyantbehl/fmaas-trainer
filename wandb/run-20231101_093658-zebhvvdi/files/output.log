@@ -1,0 +1,15 @@
+  0%|          | 0/5 [00:00<?, ?it/s]`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+/u/rganti/.conda/envs/tuning/lib/python3.10/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.8974, 'learning_rate': 2e-05, 'epoch': 1.0}
+ 20%|██        | 1/5 [00:37<02:30, 37.66s/it]
+
+
+ 60%|██████    | 3/5 [01:51<01:14, 37.13s/it]
+{'loss': 1.8467, 'learning_rate': 1e-05, 'epoch': 3.0}
+
+
+100%|██████████| 5/5 [03:05<00:00, 37.08s/it]
+{'loss': 1.7583, 'learning_rate': 0.0, 'epoch': 5.0}
+
+100%|██████████| 5/5 [03:05<00:00, 37.14s/it]

@@ -28,3 +28,7 @@ class TrainingArguments(transformers.TrainingArguments):
         default=DEFAULT_CONTEXT_LENGTH,
         metadata={"help": "Maximum sequence length. Sequences will be right padded (and possibly truncated)."},
     )
+    packing: bool = field(
+        default=False,
+        metadata={"help": "Packing to be enabled in SFT Trainer, default is False"},
+    )
