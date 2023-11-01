@@ -1,5 +1,11 @@
 ## Daily notes on progress (reverse chrono order)
 
+### 10/31
+* Model was trained with 1500 tokens/sec/GPU with 4k sequence length and packing (TODO: Find from HF on how the packing is being done)
+* HF provided contacts (use Slack (channel)[https://ibm-research.slack.com/archives/C0576DSN62U]): @Younes Belkada for `SFTTrainer` and @Zach Mueller
+  for FSDP integration
+* CCC being explored (have the platform queue access)
+
 ### 10/30
 * HF suggests to use `SFTTrainer`, discussions with Gaurav et al underway
 * A first run with `SFTTrainer` is now checked in, throughput appears to meet what we expect in 13B model from pretraining (~1600 toks/sec/GPU)
