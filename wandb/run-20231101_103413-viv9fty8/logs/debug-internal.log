@@ -548,3 +548,35 @@
 2023-11-01 10:52:29,852 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
 2023-11-01 10:52:34,852 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
 2023-11-01 10:52:39,853 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:43,777 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:52:43,780 DEBUG   SenderThread:436235 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:52:43,903 DEBUG   SenderThread:436235 [sender.py:send():380] send: stats
+2023-11-01 10:52:44,904 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:49,905 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:54,905 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:58,778 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:52:58,779 DEBUG   SenderThread:436235 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:53:00,879 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:05,879 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:10,880 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:13,778 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:53:13,778 DEBUG   SenderThread:436235 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:53:13,903 DEBUG   SenderThread:436235 [sender.py:send():380] send: stats
+2023-11-01 10:53:15,904 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:20,904 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:25,825 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-01 10:53:25,826 DEBUG   SenderThread:436235 [sender.py:send():380] send: history
+2023-11-01 10:53:25,826 DEBUG   SenderThread:436235 [sender.py:send_request():407] send_request: summary_record
+2023-11-01 10:53:25,829 INFO    SenderThread:436235 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-01 10:53:25,995 INFO    Thread-12 :436235 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_103413-viv9fty8/files/wandb-summary.json
+2023-11-01 10:53:26,829 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:27,996 INFO    Thread-12 :436235 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_103413-viv9fty8/files/output.log
+2023-11-01 10:53:28,778 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:53:28,778 DEBUG   SenderThread:436235 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:53:31,863 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:36,864 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:41,864 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:43,778 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:53:43,778 DEBUG   SenderThread:436235 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:53:43,861 DEBUG   SenderThread:436235 [sender.py:send():380] send: stats
+2023-11-01 10:53:47,862 DEBUG   HandlerThread:436235 [handler.py:handle_request():146] handle_request: status_report

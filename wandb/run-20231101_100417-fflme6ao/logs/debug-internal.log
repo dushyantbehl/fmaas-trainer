@@ -2512,3 +2512,69 @@
 2023-11-01 10:52:32,517 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: stop_status
 2023-11-01 10:52:32,518 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: stop_status
 2023-11-01 10:52:37,610 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:41,167 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-01 10:52:41,170 DEBUG   SenderThread:1998943 [sender.py:send():380] send: history
+2023-11-01 10:52:41,170 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: summary_record
+2023-11-01 10:52:41,173 INFO    SenderThread:1998943 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-01 10:52:41,263 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/wandb-summary.json
+2023-11-01 10:52:42,264 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:52:43,174 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:43,264 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:52:47,518 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:52:47,518 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:52:47,664 DEBUG   SenderThread:1998943 [sender.py:send():380] send: stats
+2023-11-01 10:52:48,666 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:53,666 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:56,722 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-01 10:52:56,723 DEBUG   SenderThread:1998943 [sender.py:send():380] send: history
+2023-11-01 10:52:56,724 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: summary_record
+2023-11-01 10:52:56,726 INFO    SenderThread:1998943 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-01 10:52:57,268 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/wandb-summary.json
+2023-11-01 10:52:58,268 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:52:58,727 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:52:59,268 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:53:02,518 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:53:02,518 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:53:04,671 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:09,672 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:10,851 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-01 10:53:10,852 DEBUG   SenderThread:1998943 [sender.py:send():380] send: history
+2023-11-01 10:53:10,852 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: summary_record
+2023-11-01 10:53:10,855 INFO    SenderThread:1998943 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-01 10:53:11,272 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/wandb-summary.json
+2023-11-01 10:53:12,272 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:53:13,272 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:53:14,857 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:17,518 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:53:17,518 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:53:17,668 DEBUG   SenderThread:1998943 [sender.py:send():380] send: stats
+2023-11-01 10:53:20,669 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:22,471 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-01 10:53:22,472 DEBUG   SenderThread:1998943 [sender.py:send():380] send: history
+2023-11-01 10:53:22,472 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: summary_record
+2023-11-01 10:53:22,473 INFO    SenderThread:1998943 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-01 10:53:23,275 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/wandb-summary.json
+2023-11-01 10:53:24,276 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:53:25,277 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:53:26,474 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:31,474 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:32,518 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:53:32,518 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:53:36,002 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-01 10:53:36,003 DEBUG   SenderThread:1998943 [sender.py:send():380] send: history
+2023-11-01 10:53:36,003 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: summary_record
+2023-11-01 10:53:36,005 INFO    SenderThread:1998943 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-01 10:53:36,280 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/wandb-summary.json
+2023-11-01 10:53:36,280 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:53:37,006 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:37,280 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/output.log
+2023-11-01 10:53:42,007 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:47,007 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: status_report
+2023-11-01 10:53:47,518 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-01 10:53:47,518 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: stop_status
+2023-11-01 10:53:47,695 DEBUG   SenderThread:1998943 [sender.py:send():380] send: stats
+2023-11-01 10:53:50,859 DEBUG   HandlerThread:1998943 [handler.py:handle_request():146] handle_request: partial_history
+2023-11-01 10:53:50,860 DEBUG   SenderThread:1998943 [sender.py:send():380] send: history
+2023-11-01 10:53:50,860 DEBUG   SenderThread:1998943 [sender.py:send_request():407] send_request: summary_record
+2023-11-01 10:53:50,861 INFO    SenderThread:1998943 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-11-01 10:53:51,288 INFO    Thread-12 :1998943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /dccstor/fmaas-tuning/fmaas-tuning/wandb/run-20231101_100417-fflme6ao/files/wandb-summary.json
