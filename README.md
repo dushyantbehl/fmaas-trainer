@@ -19,7 +19,7 @@ pip install -e .
 ```
 torchrun --nproc_per_node=8
 --master_port=1234 
-train.py 
+tuning/sft_trainer.py 
 --model_name_or_path /lustre/llama_weights/hf/13B 
 --data_path ./alpaca_data.json 
 --bf16 True 
@@ -39,6 +39,7 @@ train.py
 --fsdp "full_shard auto_wrap" 
 --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer'
 --include_tokens_per_second
+--packing False
 ```
 
 The above is an example. We would need to tune parameters depending on the model size, data size. The above example has been validated on 8 x A100 80GB.
