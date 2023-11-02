@@ -2,11 +2,11 @@
 
 ### 11/01-11/02
 * Kicked off training on two different datasets and they are going well without `packing`
-* Packing has issues with the loss curve and has been raised with HF (see thread (here)[https://ibm-research.slack.com/archives/C0576DSN62U/p1698935125641059])
+* Packing has issues with the loss curve and has been raised with HF (see thread [here](https://ibm-research.slack.com/archives/C0576DSN62U/p1698935125641059))
 * Loss curves for no packing on API dataset matches what Pavan and team see
 * @pavithra and @dushyant to look into getting numbers for various batch sizes
 * @raghu to look into how to get `GPTBigCode` with FA2 (which is now merged and will be available in the main release).
-* Issues with SFT Trainer: (a) Packing discrepancy (see this (thread)[https://ibm-research.slack.com/archives/C0576DSN62U/p1698935125641059]), (b) How data is formatted (see this (thread)[https://ibm-research.slack.com/archives/C0576DSN62U/p1698935416128899] and (issue)[https://github.com/huggingface/trl/issues/944]), (c) How to compute tokens/sec/GPU (see this (thread)[https://ibm-research.slack.com/archives/C0576DSN62U/p1698936778849009] and this (issue)[https://github.com/huggingface/transformers/issues/27027]).
+* Issues with SFT Trainer: (a) Packing discrepancy (see this [thread](https://ibm-research.slack.com/archives/C0576DSN62U/p1698935125641059)), (b) How data is formatted (see this [thread](https://ibm-research.slack.com/archives/C0576DSN62U/p1698935416128899) and [issue](https://github.com/huggingface/trl/issues/944)), (c) How to compute tokens/sec/GPU (see this [thread](https://ibm-research.slack.com/archives/C0576DSN62U/p1698936778849009) and this [issue](https://github.com/huggingface/transformers/issues/27027)).
 * We need to have a SFT Trainer implementation in the main watsonx repo
 
 ### 10/31
