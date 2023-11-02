@@ -1,5 +1,6 @@
 numpy
-transformers>=4.28.1
+accelerate>=0.20.3
+transformers>=4.34.1
 torch
 sentencepiece
 tokenizers>=0.13.3
