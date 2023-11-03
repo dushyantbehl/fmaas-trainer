@@ -4,9 +4,12 @@ from tuning.config import configs
 
 import transformers
 import torch
+import os
 from transformers import Trainer
 
 from typing import Dict
+
+from aim_loader import get_aimstack_callback
 
 def make_supervised_data_module(tokenizer: transformers.PreTrainedTokenizer, data_args) -> Dict:
     """Make dataset and collator for supervised fine-tuning."""
@@ -51,8 +54,14 @@ def train():
         model=model,
     )
 
+    callback = get_aimstack_callback()
     data_module = make_supervised_data_module(tokenizer=tokenizer, data_args=data_args)
-    trainer = Trainer(model=model, tokenizer=tokenizer, args=training_args, **data_module)
+    trainer = Trainer(
+                model=model,
+                tokenizer=tokenizer,
+                args=training_args,
+                **data_module,
+                callbacks=[callback])
     trainer.train()
     trainer.save_state()
     trainer.save_model(output_dir=training_args.output_dir)

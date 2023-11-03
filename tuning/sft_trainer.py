@@ -7,6 +7,8 @@ import datasets
 from tuning.data import tokenizer_data_utils
 from tuning.config import configs
 
+from aim_loader import get_aimstack_callback
+
 def format_prompt_fn(example):
     text = f"{example['input']} \n[ANS] {example['output']}"
     
@@ -65,6 +67,8 @@ def train():
     #response_template="\n[ANS]"
     #data_collator = DataCollatorForCompletionOnlyLM(response_template, tokenizer=tokenizer)
 
+    callback = get_aimstack_callback()
+
     if training_args.packing:
         trainer = SFTTrainer(
             model=model,
@@ -73,7 +77,8 @@ def train():
             formatting_func=format_prompt_fn,
             packing=True,
             args=training_args,
-            max_seq_length=4096
+            max_seq_length=4096,
+            callbacks=[callback]
         )
     else:
         trainer = SFTTrainer(
@@ -82,7 +87,8 @@ def train():
             train_dataset=json_dataset['train'],
             formatting_func=format_prompt_fn_no_pack,
             args=training_args,
-            max_seq_length=4096
+            max_seq_length=4096,
+            callbacks=[callback]
         )
     
     trainer.train()
